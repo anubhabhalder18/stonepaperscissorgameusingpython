@@ -73,7 +73,9 @@ while(i<Max):
     else:
         game(User)
         i+=1
-if(pc_score==user_score):
+if(i==Max):
+    print("\n")
+elif(pc_score==user_score):
     print("\n\n\n\t\tDRAW\n")
 elif(pc_score>user_score):
     print("\n\n\n\t\tPC WON\n")
