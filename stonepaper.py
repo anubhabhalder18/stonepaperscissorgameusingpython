@@ -22,7 +22,7 @@ def game(U):
     global pc_score,user_score
     user=sc(U)
     pc=random.choice(pcl)
-    print(pc)
+    print("PC >>>\t",pc)
     
 
     
