@@ -63,7 +63,7 @@ print("\t\tWELCOME TO STONE PAPER SCISSOR GAME ")
 while(i<Max):
     User=input("\nEnter s for stone p for paper k for scissor and e to exit\t")
     if(sc(User)=="e"):
-        i=Max
+        i=Max+1
         print("\n\ngame exited \n\n")
    
     elif(sc(User) not in "spk"):
@@ -73,7 +73,7 @@ while(i<Max):
     else:
         game(User)
         i+=1
-if(i==Max):
+if(i==Max+1):
     print("\n")
 elif(pc_score==user_score):
     print("\n\n\n\t\tDRAW\n")
