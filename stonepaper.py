@@ -2,12 +2,13 @@ import random
 pc_score=0
 user_score=0
 
+#print score
+
 def print_score():
     global pc_score,user_score
     print("USER\t",str(user_score),"\t\tPC\t",str(pc_score))
 
-
-
+#to read a single character from user
 def sc(c):
     input=""
     for x in c:
@@ -16,7 +17,7 @@ def sc(c):
             break
     return input
 
-
+#Gameplay
 def game(U):
     global pcl
     global pc_score,user_score
@@ -24,7 +25,7 @@ def game(U):
     pc=random.choice(pcl)
     print("PC >>>\t",pc)
     
-
+#seeing possibilities 
     
     if(pc=="s" and user=="k"):
         pc_score+=1
@@ -54,7 +55,7 @@ def game(U):
         print("\t\t\tDRAW")
         print_score()
     
-    
+#creating computer choicses and max turns    
 pcl=["s","p","k"]
 Max=5
 i=0
